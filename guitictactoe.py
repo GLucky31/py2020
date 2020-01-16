@@ -1,6 +1,5 @@
 from tkinter import *
 from tkinter import messagebox
-#https://github.com/abhishek305/ProgrammingKnowlegde-Tkinter-Series/blob/master/11th/my%20tic%20tac%202.py
 #(1, 2, 3), (4, 5, 6), (7, 8, 9), (1, 4, 7), (2, 5, 8), (3, 6, 9), (1, 5, 9), (3, 5, 7) Zmagovalne kombinacije
 root = Tk()
 
