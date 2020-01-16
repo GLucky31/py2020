@@ -38,7 +38,7 @@ def btnClick(button):
         poteza=True
         checkForWin()
         stanjeCheck()
-    else:
+    elif(zmaga == False and button["text"] != " "):
         messagebox.showinfo("Opozorilo.", "Gumb je že bil kliknjen.")
 
 gumb1 = Button(root, text=" ", bg='gray', height=4, width=8, command=lambda: btnClick(gumb1))
@@ -61,7 +61,7 @@ gumb9 = Button(root, text=" ", bg='gray', height=4, width=8, command=lambda: btn
 gumb9.grid(row=3, column=2)
 
 def checkForWin():
-    global zmaga
+    global zmaga,label1
     if (gumb1['text'] == 'X' and gumb2['text'] == 'X' and gumb3['text'] == 'X' or
         gumb4['text'] == 'X' and gumb5['text'] == 'X' and gumb6['text'] == 'X' or
         gumb7['text'] =='X' and gumb8['text'] == 'X' and gumb9['text'] == 'X' or
